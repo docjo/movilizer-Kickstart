@@ -1,0 +1,21 @@
+{
+  "name": "PROJECTNAME",
+  "version": "0.0.1",
+  "authors": [
+    "Jonathan Wildermuth <jonathan.wildermuth@movilizer.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "plugins",
+    "platforms",
+    "bower_components",
+    "www/bower_components/"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  },
+  "devDependencies": {
+  }
+}

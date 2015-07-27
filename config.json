@@ -1,0 +1,14 @@
+{
+  "libs_files": [
+    "bower_components/jquery/dist/jquery.min.js"
+  ],
+  "movilizerMDS": {
+    "url": "https://demo.movilizer.com/mds/document",
+    "systemId": "SYSTEM_ID",
+    "password": "PASSWORD",
+    "pool": "DOCUMENT_POOL",
+    "key": "DOCUMENT_KEY",
+    "lang": "",
+    "suffix": "zip"
+  }
+}
