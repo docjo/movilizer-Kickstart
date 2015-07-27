@@ -55,7 +55,7 @@ Install Bower (optional)
 ### Bower (optional)
 **configure bower.json** to add or remove dev/dependencies eg. jquery, underscore ...
 
-run
+run:
 
 	$ bower install
 	
@@ -66,27 +66,34 @@ All bower components are installed in the directory "_src/bower_components_"
 ### Grunt
 **Install grunt modules**
 
+run:
+
 	$ npm install
 
 All node modules are installed in the directory "_node_modules_"
 
-### config.json
-- add bower_components paths to "lib_files"
-for example:
 
+### config.json
+**add bower_components paths to "lib_files"**
+
+for example:
 
     "libs_files": [
         "bower_components/jquery/dist/jquery.min.js",
 		"..."
   	]
 
-- insert movilizerMDS credentials
+**insert movilizerMDS demo cloud credentials**
 
-
-	"systemId": "SYSTEM_ID"
-	"password": "PASSWORD"
-	"pool": "DOCUMENT_POOL"
-	"key": "DOCUMENT_KEY"
+        "movilizerMDS": {
+            "url": "https://demo.movilizer.com/mds/document",
+            "systemId": "SYSTEM_ID",
+            "password": "PASSWORD",
+            "pool": "DOCUMENT_POOL",
+            "key": "DOCUMENT_KEY",
+            "lang": "",
+            "suffix": "zip"
+          }
 
 
 
@@ -97,7 +104,7 @@ All Grunt tasks are defined in the Gruntfile.js
 
 
 ### Start Grunt Sever
-run 
+run: 
 
 	$ grunt server
 
@@ -106,7 +113,7 @@ to start the local webserver (http://localhost:8000/)
 
 
 ### Grunt (default)
-run
+run:
 
 	$ grunt
 
@@ -129,7 +136,7 @@ LiveReload monitors changes in the file system. As soon as you save a file, it i
 
 
 ### Upload to Movilizer MDS
-run
+run:
 
 	$ grunt upload
 	
@@ -142,11 +149,3 @@ It's also possible to include the compress and upload task with the default task
 For example:
 
     grunt.registerTask("default", ["clean", "sass:dev", "copy", "concat", "uglify", "compress", "upload_file", "watch"]);
-
-
-
-
-
-
-
-
